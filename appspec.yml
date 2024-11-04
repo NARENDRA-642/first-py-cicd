@@ -3,10 +3,10 @@ os: linux
 
 hooks:
   ApplicationStop:
-    - location: scripts/start_container.sh
+    - location: NARENDRA-642/first-py-cicd/stop_container.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/start_container.sh
+    - location: NARENDRA-642/first-py-cicd/start_container.sh
       timeout: 300
       runas: root
